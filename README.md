@@ -6,6 +6,7 @@
 
 ## 결과물
 
+- [PRD](docs/PRD.md): 문제·사용자·우선 판단 기준·필요 기능·2주 시험 조건을 한 문서로 정리했습니다.
 - [포트폴리오 PDF](SELLER-READY-BOARD-PORTFOLIO.pdf): 문제를 고른 이유와 판단 과정을 5쪽으로 정리했습니다.
 - [Excel 운영표](SELLER-READY-BOARD-OPERATIONS.xlsx): 가상 사례를 수정하면 먼저 볼 신호가 다시 계산됩니다.
 - [웹 포트폴리오](BAEMIN-STORE-OPERATIONS-PORTFOLIO.html): 셀러를 선택하고 판단 근거와 다음 행동을 확인할 수 있습니다.
