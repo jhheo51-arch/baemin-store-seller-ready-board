@@ -1,0 +1,191 @@
+{
+  "seller_count": 240,
+  "completed_sellers": 196,
+  "completion_rate": 0.817,
+  "median_lead_days": 6.0,
+  "p90_lead_days": 8.2,
+  "mature_seller_count": 184,
+  "completion_14d_rate": 0.891,
+  "inquiry_count": 540,
+  "repeat_inquiry_rate": 0.152,
+  "open_inquiries": 26,
+  "stage_metrics": [
+    {
+      "stage": "서류 확인",
+      "cases": 231,
+      "median_queue_hours": 30.9,
+      "p90_queue_hours": 46.8,
+      "rework_cases": 70,
+      "rework_rate": 0.30303030303030304,
+      "stage_order": 1
+    },
+    {
+      "stage": "계약",
+      "cases": 219,
+      "median_queue_hours": 24.1,
+      "p90_queue_hours": 36.92000000000001,
+      "rework_cases": 0,
+      "rework_rate": 0.0,
+      "stage_order": 2
+    },
+    {
+      "stage": "상품 등록",
+      "cases": 205,
+      "median_queue_hours": 50.2,
+      "p90_queue_hours": 72.03999999999999,
+      "rework_cases": 47,
+      "rework_rate": 0.22926829268292684,
+      "stage_order": 3
+    },
+    {
+      "stage": "판매 준비 완료",
+      "cases": 196,
+      "median_queue_hours": 27.450000000000003,
+      "p90_queue_hours": 40.45,
+      "rework_cases": 0,
+      "rework_rate": 0.0,
+      "stage_order": 4
+    }
+  ],
+  "issue_metrics": [
+    {
+      "issue_type": "사업자 정보",
+      "inquiries": 74,
+      "repeat_inquiries": 18,
+      "repeat_rate": 0.24324324324324326
+    },
+    {
+      "issue_type": "서류 보완",
+      "inquiries": 114,
+      "repeat_inquiries": 23,
+      "repeat_rate": 0.20175438596491227
+    },
+    {
+      "issue_type": "담당자 확인",
+      "inquiries": 42,
+      "repeat_inquiries": 8,
+      "repeat_rate": 0.19047619047619047
+    },
+    {
+      "issue_type": "오픈 일정",
+      "inquiries": 19,
+      "repeat_inquiries": 3,
+      "repeat_rate": 0.15789473684210525
+    },
+    {
+      "issue_type": "계약 절차",
+      "inquiries": 53,
+      "repeat_inquiries": 8,
+      "repeat_rate": 0.1509433962264151
+    },
+    {
+      "issue_type": "검토 일정",
+      "inquiries": 92,
+      "repeat_inquiries": 12,
+      "repeat_rate": 0.13043478260869565
+    },
+    {
+      "issue_type": "운영 가이드",
+      "inquiries": 11,
+      "repeat_inquiries": 1,
+      "repeat_rate": 0.09090909090909091
+    },
+    {
+      "issue_type": "이미지 규격",
+      "inquiries": 25,
+      "repeat_inquiries": 2,
+      "repeat_rate": 0.08
+    },
+    {
+      "issue_type": "카테고리 설정",
+      "inquiries": 28,
+      "repeat_inquiries": 2,
+      "repeat_rate": 0.07142857142857142
+    },
+    {
+      "issue_type": "정산 정보",
+      "inquiries": 31,
+      "repeat_inquiries": 2,
+      "repeat_rate": 0.06451612903225806
+    },
+    {
+      "issue_type": "마케팅 지원",
+      "inquiries": 16,
+      "repeat_inquiries": 1,
+      "repeat_rate": 0.0625
+    },
+    {
+      "issue_type": "상품 등록",
+      "inquiries": 35,
+      "repeat_inquiries": 2,
+      "repeat_rate": 0.05714285714285714
+    }
+  ],
+  "policy_metrics": [
+    {
+      "policy": "접수 순서",
+      "completed_tasks": 1061,
+      "unresolved_tasks": 164,
+      "completion_rate": 0.866,
+      "median_wait_days": 6.0,
+      "p90_wait_days": 7.0,
+      "sla_3day_rate": 0.224,
+      "ready_stage_sla_3day_rate": 0.2,
+      "max_wait_unresolved_days": 6
+    },
+    {
+      "policy": "오래 대기, 재문의 우선",
+      "completed_tasks": 1056,
+      "unresolved_tasks": 169,
+      "completion_rate": 0.862,
+      "median_wait_days": 5.0,
+      "p90_wait_days": 10.0,
+      "sla_3day_rate": 0.396,
+      "ready_stage_sla_3day_rate": 0.35,
+      "max_wait_unresolved_days": 9
+    },
+    {
+      "policy": "판매 준비 임박 우선",
+      "completed_tasks": 1031,
+      "unresolved_tasks": 194,
+      "completion_rate": 0.842,
+      "median_wait_days": 0.0,
+      "p90_wait_days": 22.0,
+      "sla_3day_rate": 0.778,
+      "ready_stage_sla_3day_rate": 1.0,
+      "max_wait_unresolved_days": 31
+    }
+  ],
+  "quality_checks": [
+    {
+      "check": "seller_id 고유성",
+      "failed_rows": 0,
+      "status": "통과"
+    },
+    {
+      "check": "stage 행 복합키 고유성",
+      "failed_rows": 0,
+      "status": "통과"
+    },
+    {
+      "check": "문의 seller_id 연결",
+      "failed_rows": 0,
+      "status": "통과"
+    },
+    {
+      "check": "업무 seller_id 연결",
+      "failed_rows": 0,
+      "status": "통과"
+    },
+    {
+      "check": "음수 대기시간 또는 작업시간",
+      "failed_rows": 0,
+      "status": "통과"
+    },
+    {
+      "check": "완료일이 시작일보다 빠름",
+      "failed_rows": 0,
+      "status": "통과"
+    }
+  ]
+}
