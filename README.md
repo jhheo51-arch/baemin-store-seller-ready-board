@@ -47,6 +47,21 @@ PDF와 Excel의 12건 사례가 같은 기준으로 표시되는지 확인했고
 - [가상 데이터](data/): 셀러, 문의, 단계 이력, 할 일의 원본 자료입니다.
 - [계산 과정](analysis/seller-onboarding-analysis.ipynb): 가상 자료를 점검하고 우선 신호를 계산한 과정을 남겼습니다.
 
+## 계산을 다시 확인하는 방법
+
+Python 3.12에서 아래 순서로 실행합니다. 원본 CSV와 제출 자료를 덮어쓰지 않습니다.
+
+```sh
+python -m pip install -r requirements.txt
+python scripts/check_repository.py
+python -m unittest discover -s tests -v
+python scripts/check_notebook.py
+```
+
+노트북은 공개 CSV에서 정책 세 가지를 다시 계산하고, 저장된 비교 결과와 일치하는지 검사합니다. 가상 자료 생성도 `python analysis/generate_data.py --output-dir reproduced-data`로 재현할 수 있습니다. 출력 폴더가 이미 있으면 생성을 거절합니다.
+
+정책 비교는 56일 동안 하루 80시간의 가상 처리 여력을 동일하게 적용합니다. 비교표의 `sla_3day_rate`는 **완료한 업무 중 3일 안에 처리한 비율**이며 미완료 업무는 별도로 셉니다. 전체 접수 업무를 분모로 하는 운영 목표 지표와 혼용하지 않습니다. 단계별 지표, 정렬 기준과 가정의 한계는 [계산 문서](analysis/seller-onboarding-analysis.ipynb)와 [데이터 항목 설명](docs/data-dictionary.md)에 적었습니다.
+
 ## 세 자료가 연결되는 방식
 
 1. **PDF에서 문제와 판단을 설명합니다.** 공식 자료를 읽고 왜 네 가지 신호를 골랐는지, 대표 사례를 어떤 순서로 처리할지 보여줍니다.
